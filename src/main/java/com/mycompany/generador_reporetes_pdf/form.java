@@ -33,8 +33,6 @@ public class form extends javax.swing.JFrame {
         fechaInput = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         numeroOficioInput = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        datosIdentificacionInput = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -58,10 +56,7 @@ public class form extends javax.swing.JFrame {
         disminucionPartidaInput1 = new javax.swing.JTextField();
         disminucionPartidaInput2 = new javax.swing.JTextField();
         disminucionPartidaInput3 = new javax.swing.JTextField();
-        disminucionMesInput1 = new javax.swing.JTextField();
-        disminucionMesInput2 = new javax.swing.JTextField();
         disminucionImporteInput1 = new javax.swing.JTextField();
-        disminucionMesInput3 = new javax.swing.JTextField();
         disminucionImporteInput2 = new javax.swing.JTextField();
         disminucionImporteInput3 = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
@@ -81,9 +76,6 @@ public class form extends javax.swing.JFrame {
         aumentoPartidaInput2 = new javax.swing.JTextField();
         aumentoPartidaInput3 = new javax.swing.JTextField();
         jLabel21 = new javax.swing.JLabel();
-        aumentoMesInput1 = new javax.swing.JTextField();
-        aumentoMesInput2 = new javax.swing.JTextField();
-        aumentoMesInput3 = new javax.swing.JTextField();
         jLabel22 = new javax.swing.JLabel();
         aumentoImporteInput1 = new javax.swing.JTextField();
         aumentoImporteInput2 = new javax.swing.JTextField();
@@ -97,6 +89,12 @@ public class form extends javax.swing.JFrame {
         autorizoInput = new javax.swing.JComboBox<>();
         jLabel26 = new javax.swing.JLabel();
         generarReporteButton = new javax.swing.JButton();
+        disminucionMesInput1 = new javax.swing.JComboBox<>();
+        disminucionMesInput2 = new javax.swing.JComboBox<>();
+        disminucionMesInput3 = new javax.swing.JComboBox<>();
+        aumentoMesInput1 = new javax.swing.JComboBox<>();
+        aumentoMesInput2 = new javax.swing.JComboBox<>();
+        aumentoMesInput3 = new javax.swing.JComboBox<>();
 
         jLabel12.setText("jLabel12");
 
@@ -109,14 +107,6 @@ public class form extends javax.swing.JFrame {
         numeroOficioInput.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 numeroOficioInputActionPerformed(evt);
-            }
-        });
-
-        jLabel3.setText("Datos de Identificación del Proyecto Sujeto a  Modificación ");
-
-        datosIdentificacionInput.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                datosIdentificacionInputActionPerformed(evt);
             }
         });
 
@@ -138,45 +128,13 @@ public class form extends javax.swing.JFrame {
 
         jLabel8.setText("Clave y denominacion del proyecto");
 
-        claveInput.setText("jTextField4");
-
         jLabel9.setText("Detalle del transpaso");
 
         jLabel10.setText("Disminucion");
 
         jLabel11.setText("Clave pragmatica");
 
-        disminucionClaveInput1.setText("jTextField5");
-
-        disminucionClaveInput2.setText("jTextField5");
-
-        disminucionClaveInput3.setText("jTextField5");
-
         jLabel13.setText("F.F");
-
-        disminucionFFInput1.setText("jTextField8");
-
-        disminucionFFInput2.setText("jTextField8");
-
-        disminucionFFInput3.setText("jTextField8");
-
-        disminucionPartidaInput1.setText("jTextField8");
-
-        disminucionPartidaInput2.setText("jTextField8");
-
-        disminucionPartidaInput3.setText("jTextField8");
-
-        disminucionMesInput1.setText("jTextField8");
-
-        disminucionMesInput2.setText("jTextField8");
-
-        disminucionImporteInput1.setText("jTextField8");
-
-        disminucionMesInput3.setText("jTextField8");
-
-        disminucionImporteInput2.setText("jTextField8");
-
-        disminucionImporteInput3.setText("jTextField8");
 
         jLabel14.setText("Partida");
 
@@ -188,47 +146,15 @@ public class form extends javax.swing.JFrame {
 
         jLabel18.setText("Clave pragmatica");
 
-        aumentoClaveInput1.setText("jTextField5");
-
-        aumentoClaveInput2.setText("jTextField5");
-
-        aumentoClaveInput3.setText("jTextField5");
-
         jLabel19.setText("F.F");
-
-        aumentoFFInput1.setText("jTextField8");
-
-        aumentoFFInput2.setText("jTextField8");
-
-        aumentoFFInput3.setText("jTextField8");
 
         jLabel20.setText("Partida");
 
-        aumentoPartidaInput1.setText("jTextField8");
-
-        aumentoPartidaInput2.setText("jTextField8");
-
-        aumentoPartidaInput3.setText("jTextField8");
-
         jLabel21.setText("Mes");
-
-        aumentoMesInput1.setText("jTextField8");
-
-        aumentoMesInput2.setText("jTextField8");
-
-        aumentoMesInput3.setText("jTextField8");
 
         jLabel22.setText("Importe");
 
-        aumentoImporteInput1.setText("jTextField8");
-
-        aumentoImporteInput2.setText("jTextField8");
-
-        aumentoImporteInput3.setText("jTextField8");
-
         jLabel23.setText("Justificacion");
-
-        justificacionInput.setText("jTextField35");
 
         jLabel24.setText("Solicito:");
 
@@ -249,6 +175,18 @@ public class form extends javax.swing.JFrame {
             }
         });
 
+        disminucionMesInput1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" }));
+
+        disminucionMesInput2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" }));
+
+        disminucionMesInput3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" }));
+
+        aumentoMesInput1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" }));
+
+        aumentoMesInput2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" }));
+
+        aumentoMesInput3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" }));
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -259,10 +197,6 @@ public class form extends javax.swing.JFrame {
                         .addComponent(jLabel4)
                         .addGap(18, 18, 18)
                         .addComponent(dependenciaGeneralInput, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addGap(18, 18, 18)
-                        .addComponent(datosIdentificacionInput))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel5)
                         .addGap(18, 18, 18)
@@ -283,17 +217,11 @@ public class form extends javax.swing.JFrame {
                         .addComponent(jLabel23)
                         .addGap(18, 18, 18)
                         .addComponent(justificacionInput))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(generarReporteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(fechaInput, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel2)
-                                .addGap(18, 18, 18)
-                                .addComponent(numeroOficioInput, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel9)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(disminucionClaveInput3, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
@@ -304,6 +232,16 @@ public class form extends javax.swing.JFrame {
                                 .addComponent(disminucionMesInput3, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(disminucionImporteInput3, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jLabel2)
+                                .addGap(18, 18, 18)
+                                .addComponent(numeroOficioInput, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel1)
+                                .addGap(18, 18, 18)
+                                .addComponent(fechaInput, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel9)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
@@ -316,45 +254,46 @@ public class form extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(disminucionFFInput2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(disminucionPartidaInput2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(disminucionMesInput2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(disminucionImporteInput2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(disminucionFFInput1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jLabel13)
-                                            .addComponent(jLabel19)
-                                            .addComponent(aumentoFFInput1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(18, 18, 18)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(disminucionPartidaInput1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jLabel14)
-                                            .addComponent(jLabel20)
-                                            .addComponent(aumentoPartidaInput1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(18, 18, 18)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(disminucionMesInput1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jLabel15)
-                                            .addComponent(jLabel21)
-                                            .addComponent(aumentoMesInput1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(18, 18, 18)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel16)
-                                            .addComponent(disminucionImporteInput1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jLabel22)
-                                            .addComponent(aumentoImporteInput1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(aumentoFFInput2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
                                         .addComponent(aumentoPartidaInput2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
                                         .addComponent(aumentoMesInput2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
-                                        .addComponent(aumentoImporteInput2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                        .addComponent(aumentoImporteInput2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(disminucionFFInput2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(disminucionPartidaInput2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(disminucionMesInput2, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(disminucionFFInput1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(jLabel13)
+                                                    .addComponent(jLabel19)
+                                                    .addComponent(aumentoFFInput1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addGap(18, 18, 18)
+                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(disminucionPartidaInput1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(jLabel14)
+                                                    .addComponent(jLabel20)
+                                                    .addComponent(aumentoPartidaInput1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addGap(18, 18, 18)
+                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(jLabel15)
+                                                    .addComponent(jLabel21)
+                                                    .addComponent(disminucionMesInput1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(aumentoMesInput1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                        .addGap(18, 18, 18)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(disminucionImporteInput2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabel16)
+                                            .addComponent(disminucionImporteInput1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabel22)
+                                            .addComponent(aumentoImporteInput1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(aumentoClaveInput3, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
@@ -381,8 +320,7 @@ public class form extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel26)
                                 .addGap(18, 18, 18)
-                                .addComponent(autorizoInput, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(generarReporteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(autorizoInput, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -390,15 +328,11 @@ public class form extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
                     .addComponent(jLabel2)
                     .addComponent(numeroOficioInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1)
                     .addComponent(fechaInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(datosIdentificacionInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGap(21, 21, 21)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(dependenciaGeneralInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -434,22 +368,22 @@ public class form extends javax.swing.JFrame {
                     .addComponent(disminucionClaveInput1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(disminucionFFInput1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(disminucionPartidaInput1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(disminucionMesInput1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(disminucionImporteInput1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(disminucionImporteInput1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(disminucionMesInput1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(disminucionClaveInput2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(disminucionFFInput2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(disminucionPartidaInput2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(disminucionMesInput2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(disminucionImporteInput2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(disminucionImporteInput2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(disminucionMesInput2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(disminucionClaveInput3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(disminucionFFInput3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(disminucionPartidaInput3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(disminucionMesInput3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(disminucionImporteInput3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(disminucionImporteInput3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(disminucionMesInput3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel17)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -464,22 +398,22 @@ public class form extends javax.swing.JFrame {
                     .addComponent(aumentoClaveInput1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(aumentoFFInput1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(aumentoPartidaInput1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(aumentoMesInput1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(aumentoImporteInput1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(aumentoImporteInput1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(aumentoMesInput1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(aumentoClaveInput2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(aumentoFFInput2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(aumentoPartidaInput2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(aumentoMesInput2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(aumentoImporteInput2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(aumentoImporteInput2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(aumentoMesInput2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(aumentoClaveInput3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(aumentoFFInput3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(aumentoPartidaInput3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(aumentoMesInput3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(aumentoImporteInput3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(aumentoImporteInput3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(aumentoMesInput3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel23)
@@ -494,8 +428,9 @@ public class form extends javax.swing.JFrame {
                         .addComponent(solicitoInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel25)
                         .addComponent(titularInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
-                .addComponent(generarReporteButton))
+                .addGap(18, 18, 18)
+                .addComponent(generarReporteButton)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -522,50 +457,53 @@ public class form extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_numeroOficioInputActionPerformed
 
-    private void datosIdentificacionInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_datosIdentificacionInputActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_datosIdentificacionInputActionPerformed
-
     
     private void generarReporteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_generarReporteButtonActionPerformed
-        String[] data = {fechaInput.getText(),
+        String[] data = {
             numeroOficioInput.getText(),
-            //datosIdentificacionInput.getText(),
+            fechaInput.getText(),
             dependenciaGeneralInput.getItemAt(dependenciaGeneralInput.getSelectedIndex()),
             dependenciaAuxiliarInput.getItemAt(dependenciaAuxiliarInput.getSelectedIndex()),
             programapresupuestrioInput.getItemAt(programapresupuestrioInput.getSelectedIndex()),
             objetivoInput.getItemAt(objetivoInput.getSelectedIndex()),
             claveInput.getText(),
+            
             disminucionClaveInput1.getText(),
-            disminucionClaveInput2.getText(),
-            disminucionClaveInput3.getText(),
             disminucionFFInput1.getText(),
-            disminucionFFInput2.getText(),
-            disminucionFFInput3.getText(),
             disminucionPartidaInput1.getText(),
-            disminucionPartidaInput2.getText(),
-            disminucionPartidaInput3.getText(),
-            disminucionMesInput1.getText(),
-            disminucionMesInput2.getText(),
-            disminucionMesInput3.getText(),
+            disminucionMesInput1.getItemAt(disminucionMesInput1.getSelectedIndex()),
             disminucionImporteInput1.getText(),
-            disminucionImporteInput2.getText(),
-            disminucionImporteInput3.getText(),
+            
             aumentoClaveInput1.getText(),
-            aumentoClaveInput2.getText(),
-            aumentoClaveInput3.getText(),
             aumentoFFInput1.getText(),
-            aumentoFFInput2.getText(),
-            aumentoFFInput3.getText(),
             aumentoPartidaInput1.getText(),
-            aumentoPartidaInput2.getText(),
-            aumentoPartidaInput3.getText(),
-            aumentoMesInput1.getText(),
-            aumentoMesInput2.getText(),
-            aumentoMesInput3.getText(),
+            aumentoMesInput1.getItemAt(aumentoMesInput1.getSelectedIndex()),
             aumentoImporteInput1.getText(),
+            
+            disminucionClaveInput2.getText(),
+            disminucionFFInput2.getText(),
+            disminucionPartidaInput2.getText(),
+            disminucionMesInput2.getItemAt(disminucionMesInput2.getSelectedIndex()),
+            disminucionImporteInput2.getText(),
+            
+            aumentoClaveInput2.getText(),
+            aumentoFFInput2.getText(),
+            aumentoPartidaInput2.getText(),
+            aumentoMesInput2.getItemAt(aumentoMesInput2.getSelectedIndex()),
             aumentoImporteInput2.getText(),
+            
+            disminucionClaveInput3.getText(),
+            disminucionFFInput3.getText(),
+            disminucionPartidaInput3.getText(),
+            disminucionMesInput3.getItemAt(disminucionMesInput3.getSelectedIndex()),
+            disminucionImporteInput3.getText(), 
+            
+            aumentoClaveInput3.getText(),
+            aumentoFFInput3.getText(),
+            aumentoPartidaInput3.getText(),
+            aumentoMesInput3.getItemAt(aumentoMesInput3.getSelectedIndex()),
             aumentoImporteInput3.getText(),
+            
             justificacionInput.getText(),
             solicitoInput.getItemAt(solicitoInput.getSelectedIndex()),
             titularInput.getItemAt(titularInput.getSelectedIndex()),
@@ -577,7 +515,7 @@ public class form extends javax.swing.JFrame {
         } catch (FileNotFoundException ex) {
             Logger.getLogger(form.class.getName()).log(Level.SEVERE, null, ex);
         }
-        PdfGenerator.Generate();
+        PdfGenerator.Generate(numeroOficioInput.getText());
         JOptionPane.showMessageDialog(null, "Reporte generado exitosamente", "Reporte", JOptionPane.INFORMATION_MESSAGE);
         
     }//GEN-LAST:event_generarReporteButtonActionPerformed
@@ -627,15 +565,14 @@ public class form extends javax.swing.JFrame {
     private javax.swing.JTextField aumentoImporteInput1;
     private javax.swing.JTextField aumentoImporteInput2;
     private javax.swing.JTextField aumentoImporteInput3;
-    private javax.swing.JTextField aumentoMesInput1;
-    private javax.swing.JTextField aumentoMesInput2;
-    private javax.swing.JTextField aumentoMesInput3;
+    private javax.swing.JComboBox<String> aumentoMesInput1;
+    private javax.swing.JComboBox<String> aumentoMesInput2;
+    private javax.swing.JComboBox<String> aumentoMesInput3;
     private javax.swing.JTextField aumentoPartidaInput1;
     private javax.swing.JTextField aumentoPartidaInput2;
     private javax.swing.JTextField aumentoPartidaInput3;
     private javax.swing.JComboBox<String> autorizoInput;
     private javax.swing.JTextField claveInput;
-    private javax.swing.JTextField datosIdentificacionInput;
     private javax.swing.JComboBox<String> dependenciaAuxiliarInput;
     private javax.swing.JComboBox<String> dependenciaGeneralInput;
     private javax.swing.JTextField disminucionClaveInput1;
@@ -647,9 +584,9 @@ public class form extends javax.swing.JFrame {
     private javax.swing.JTextField disminucionImporteInput1;
     private javax.swing.JTextField disminucionImporteInput2;
     private javax.swing.JTextField disminucionImporteInput3;
-    private javax.swing.JTextField disminucionMesInput1;
-    private javax.swing.JTextField disminucionMesInput2;
-    private javax.swing.JTextField disminucionMesInput3;
+    private javax.swing.JComboBox<String> disminucionMesInput1;
+    private javax.swing.JComboBox<String> disminucionMesInput2;
+    private javax.swing.JComboBox<String> disminucionMesInput3;
     private javax.swing.JTextField disminucionPartidaInput1;
     private javax.swing.JTextField disminucionPartidaInput2;
     private javax.swing.JTextField disminucionPartidaInput3;
@@ -674,7 +611,6 @@ public class form extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;

@@ -1,5 +1,6 @@
 package com.mycompany.generador_reporetes_pdf;
 
+import java.awt.Desktop;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -13,10 +14,10 @@ import org.xhtmlrenderer.pdf.ITextRenderer;
 
 public class PdfGenerator {
 
-    public static void Generate() {
+    public static void Generate(String fileName) {
         File inputHTML = new File("docActual.html");
         Document document;
-        try (OutputStream outputStream = new FileOutputStream("output.pdf")) {
+        try (OutputStream outputStream = new FileOutputStream("C:/Users/theic/OneDrive/Documentos/" + fileName + ".pdf")) {
             document = Jsoup.parse(inputHTML, "UTF-8");
             document.outputSettings().syntax(Document.OutputSettings.Syntax.xml);
             
@@ -30,6 +31,10 @@ public class PdfGenerator {
         }catch (IOException ex) {
             Logger.getLogger(PdfGenerator.class.getName()).log(Level.SEVERE, null, ex);
         }
-
+        try {
+            Desktop.getDesktop().open(new File("C:/Users/theic/OneDrive/Documentos/" + fileName + ".pdf"));
+        } catch (IOException ex) {
+            Logger.getLogger(PdfGenerator.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 }
